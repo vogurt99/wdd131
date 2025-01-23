@@ -1,11 +1,15 @@
+:root {
+    --global-padding: 1rem;
+    --primary-font: 'Montserrat', sans-serif;
+}
 body, html{
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: Arial;
+    font-family: var(--primary-font);
 }
 h1 {
-    padding: 1rem;
+    padding: var(--global-padding);
     margin: 0;
     background-color: #0038a8;
     color: white;
@@ -29,10 +33,13 @@ h1 {
     max-width: 200px;
 }
 footer {
-    padding: 1rem;
+    padding: var(--global-padding);
     margin: 0;
     background-color: #ce1126;
     color: white;
+}
+h1::after {
+    content: "☀️";
 }
 @media screen and (min-width: 1000px){
     body {
@@ -41,7 +48,7 @@ footer {
     .data, .weather {
         position: absolute;
         background: rgba(255, 255, 255, 0.8);
-        padding: 1rem;
+        padding: var(--global-padding);
         width: 250px;
     }
     .hero {
