@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px){
+    header {
+        background-color: #90d8b2;
+        color: black;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        background-color: #b4e5cb;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+    #menuToggle {
+        display: none;
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        max-width: 1200px;
+    }
+}

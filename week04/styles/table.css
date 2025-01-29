@@ -1,0 +1,29 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+}
+caption {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+thead th:first-child {
+    background-color: black;
+}
+thead th:not(:first-child) {
+    background-color: gray;
+    color: white;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+th {
+    font-weight: bold;
+}
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
