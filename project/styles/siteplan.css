@@ -1,0 +1,36 @@
+:root {
+    --global-padding: 1rem;
+    --heading-font: 'Abril Fatface', sans-serif;
+    --primary-font: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    font-family: var(--heading-font);
+}
+h1 {
+    display: block;
+    background-color: #2c3e75;
+    color: #fff;
+    text-align: center;
+    padding: var(--global-padding);
+    margin: 0;
+    width: 100%;
+}
+h2 {
+    color: #2c3e75;
+}
+main {
+    padding: var(--global-padding);
+}
+.wireframe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.desktop-wireframe-container img, .mobile-wireframe-container img {
+    max-width: 75%;
+    height: auto;
+}
