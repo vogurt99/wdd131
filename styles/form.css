@@ -8,6 +8,11 @@ body {
     max-width: 50%;
     margin: 0 auto;
 }
+h1 {
+    color: #2c3e75;
+    padding: var(--padding);
+    margin-left: 1rem;
+}
 main {
     padding: var(--padding);
     min-height: 20rem;
