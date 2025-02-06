@@ -1,0 +1,66 @@
+:root {
+    --padding: 1rem;
+    --margin: 1rem;
+    --primary-font: 'Roboto', serif;
+}
+body {
+    font-family: var(--primary-font);
+    max-width: 50%;
+    margin: 0 auto;
+}
+main {
+    padding: var(--padding);
+    min-height: 20rem;
+}
+.wf1 fieldset {
+    margin: var(--margin);
+    border: 1px solid #b1daf5;
+    border-radius: 9px;
+}
+.wf1 legend {
+    color: #435cda;
+    padding: var(--padding);
+}
+.wf1 label {
+    display: block;
+}
+.wf1 label[for="product"],
+.wf1 div.required,
+.wf1 label[for="installation-date"] {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+}
+.wf1 input[type="date"],
+.wf1 input[type="text"],
+.wf1 textarea,
+.wf1 select {
+    display: block;
+    padding: var(--padding);
+    border: 1px solid #435cda;
+    border-radius: 9px;
+}
+.wf1 textarea {
+    width: auto;
+    height: auto;
+    max-width: 480px;
+    max-height: 240px;
+    resize: none;
+}
+.wf1 div {
+    padding-top: var(--padding);
+}
+.wf1 input[type="submit"]{
+    border:none;
+    background-color: #435cda;
+    color: #fff;
+    border-radius: 9px;
+    padding: var(--padding);
+    width: 240px;
+    margin: 1rem;
+}
+footer {
+    background-color: #b1daf5;
+    padding: var(--padding);
+    text-align: center;
+}
