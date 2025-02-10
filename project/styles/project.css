@@ -63,11 +63,9 @@ main {
     font-family: var(--primary-font);
     padding: var(--global-padding);
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 0 auto 10rem auto;
 }
 .home-container1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     gap: 1rem;
     align-items: center;
     font-size: var(--font-size);
@@ -83,8 +81,6 @@ main {
     height: 50%;
 }
 .home-container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     align-items: center;
     font-size: var(--font-size);
@@ -112,10 +108,14 @@ footer {
     color: #fff;
     text-align: center;
     padding: var(--global-padding);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 .gallery-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 .image-container {
     max-width: 500px;

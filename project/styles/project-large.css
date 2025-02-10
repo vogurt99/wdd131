@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .home-container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+        font-size: var(--font-size);
+    }
+    .home-container2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+        font-size: var(--font-size);
+    }
+}
