@@ -4,16 +4,10 @@
     }
     .home-container1 {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-        align-items: center;
-        font-size: var(--font-size);
+        grid-template-columns: 2fr 1fr;
     }
     .home-container2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-        align-items: center;
-        font-size: var(--font-size);
     }
 }

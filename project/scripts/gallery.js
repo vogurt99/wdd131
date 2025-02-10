@@ -15,6 +15,13 @@ const cosplays = [
         imageUrl: "images/veles-detector.jpg",
         construction: "printed",
         wearable: false
+    },
+    {
+        itemName: "Mithrun",
+        finished: "2025, February, XXX",
+        imageUrl: "images/mithrun-coming-soon.jpg",
+        construction: "tailored",
+        wearable: true
     }
   ];
 
