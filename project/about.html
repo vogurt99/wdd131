@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Jericho's Armory</title>
-    <meta name="description" content="The Cosplay Gallery Website for Jericho's Armory of Samuel Jericho Gomez, for the course WDD 131 - Dynamic Web Fundamentals.">
+    <meta name="description" content="The About Page for Jericho's Armory of Samuel Jericho Gomez, for the course WDD 131 - Dynamic Web Fundamentals.">
     <meta name="author" content="Samuel Jericho Gomez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/project-large.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/formdata.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,7 +22,34 @@
         </nav>
     </header>
     <main>
-        
+        <h2 class="form">Consult With Me</h2>
+        <form method="get" action="thanks.html" class="wf1">
+            <fieldset>
+                <legend>Buyer Information</legend>
+                <label>First Name <input type="text" name="fname" required></label>
+                <label>Last Name <input type="text" name="lname" required></label>
+                <label>Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Cosplay Information</legend>
+                <div>Custom Design</div>
+                <label><input type="radio" name="custom" value="yes" required> Yes</label>
+                <label><input type="radio" name="custom" value="no" required> No</label>
+                <div>Wearable or Prop</div>
+                <label><input type="radio" name="type" value="wearable" required> Wearable</label>
+                <label><input type="radio" name="type" value="prop" required> Prop</label>
+                <div>Construction</div>
+                <label><input type="radio" name="construction" value="tailored" required> Tailored</label>
+                <label><input type="radio" name="construction" value="printed" required> 3D Printed</label>
+                <label><input type="radio" name="construction" value="foam" required> EVA Foam</label>
+            </fieldset>
+            <fieldset>
+                <legend>Details</legend>
+                <label>Expected Completion Date (4 weeks minimum) <input type="date" name="completeDate" required></label>
+                <label>Additional Notes If Needed<textarea id="review" name="notes" placeholder="Any additional notes go here."></textarea></label>
+            </fieldset>
+            <input type="submit" value="Send My Cosplan">
+        </form>
     </main>
     <footer>
         <p>

@@ -6,14 +6,14 @@ const cosplays = [
         itemName: "Lego Darth Maul Head",
         finished: "2024, March, 18",
         imageUrl: "images/darth-maul-selfie.jpg",
-        construction: "3D",
+        construction: "printed",
         wearable: true
     },
     {
         itemName: "S.T.A.L.K.E.R. Veles Detector",
         finished: "2024, January, 18",
         imageUrl: "images/veles-detector.jpg",
-        construction: "3D",
+        construction: "printed",
         wearable: false
     }
   ];
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 filteredList = cosplays.filter(t => t.wearable === false);
                 break;
             case "3D Printed":
-                filteredList = cosplays.filter(t => t.construction === "3D");
+                filteredList = cosplays.filter(t => t.construction === "printed");
                 break;
             case "Tailored":
                 filteredList = cosplays.filter(t => t.construction === "tailored");
